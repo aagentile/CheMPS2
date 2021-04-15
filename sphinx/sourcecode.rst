@@ -188,7 +188,8 @@ The python wrapper can be installed with:
 .. code-block:: bash
 
     $ cd /sourcefolder/chemps2/PyCheMPS2
-    $ python setup.py build_ext -L ${LD_LIBRARY_PATH}
+    $ export LD_LIBRARY_PATH="/sourcefolder/chemps2/build/CheMPS2"
+    $ python setup.py build_ext -L=${LD_LIBRARY_PATH}
     $ python setup.py install --prefix=/option3
 
 On my machine, the python wrapper is installed to the folder ``/option3/lib/python2.7/site-packages``, but the folder ``lib`` and the distribution of python can vary.
